@@ -1,0 +1,27 @@
+# Variáveis de ambiente (senhas, chaves secretas)
+.env
+.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+venv/
+.venv/
+
+# Node / Frontend
+node_modules/
+frontend/build/
+frontend/dist/
+
+# Docker
+postgres_data/
+
+# VS Code
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
