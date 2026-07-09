@@ -1,26 +1,20 @@
--- =============================================================
--- MANCHESTER - Sistema de Classificação de Risco
--- Banco de dados: inicialização
--- =============================================================
+-- Esse código é para criar o banco de dados referente ao Login dos usuários
 
--- Extensão para geração de UUIDs
+
+-- Extensão para geração de UUIDs (Identificadores Únicos Universais)
 CREATE EXTENSION IF NOT EXISTS "pgcrypto";
 
--- =============================================================
--- ENUM: tipos de perfil de usuário
--- =============================================================
+-- tipos de perfil de usuário
 CREATE TYPE role_tipo AS ENUM ('usuario', 'admin', 'desenvolvedor');
 
--- =============================================================
 -- TABELA: usuarios
--- =============================================================
 CREATE TABLE IF NOT EXISTS usuarios (
     id            UUID          PRIMARY KEY DEFAULT gen_random_uuid(),
     nome          VARCHAR(150)  NOT NULL,
     email         VARCHAR(150)  NOT NULL UNIQUE,
     senha_hash    TEXT          NOT NULL,
     role          role_tipo     NOT NULL DEFAULT 'usuario',
-    id_apimed     VARCHAR(50)   NULL,         -- exclusivo para usuario e admin, opcional
+    id_apimed     VARCHAR(50)   NULL,
     ativo         BOOLEAN       NOT NULL DEFAULT TRUE,
     criado_por    UUID          NULL REFERENCES usuarios(id) ON DELETE SET NULL,
     criado_em     TIMESTAMPTZ   NOT NULL DEFAULT NOW(),
@@ -31,9 +25,7 @@ CREATE TABLE IF NOT EXISTS usuarios (
 CREATE INDEX IF NOT EXISTS idx_usuarios_email ON usuarios(email);
 CREATE INDEX IF NOT EXISTS idx_usuarios_role  ON usuarios(role);
 
--- =============================================================
 -- TABELA: sessoes
--- =============================================================
 CREATE TABLE IF NOT EXISTS sessoes (
     id          UUID        PRIMARY KEY DEFAULT gen_random_uuid(),
     usuario_id  UUID        NOT NULL REFERENCES usuarios(id) ON DELETE CASCADE,
