@@ -4,6 +4,7 @@ const api = axios.create({
   baseURL: "http://localhost:8000",
 });
 
+// Função para adicionar o login do admin
 export async function login(email, senha) {
   const response = await api.post("/auth/login", { email, senha });
   const { token } = response.data;
@@ -51,4 +52,12 @@ export async function redefinirSenha(token, novaSenha) {
   }
   
   return response.json();
+}
+
+// Função para acessar o Login do usuário
+export async function loginUsuario(idUsuario, senha) {
+  const response = await api.post("/auth/login-usuario", { id_usuario: idUsuario, senha });
+  const { token } = response.data;
+  localStorage.setItem("token", token);
+  return response.data;
 }
