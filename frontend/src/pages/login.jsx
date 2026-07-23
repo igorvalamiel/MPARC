@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { login } from "../services/auth";
 import logo from "../images/mparc_short_logo.png";
 
@@ -112,6 +112,17 @@ export default function Login() {
             {carregando ? "Entrando..." : "Entrar"}
           </button>
         </form>
+
+        {/* Link Esqueci minha senha */}
+        <div className="mt-6 text-center">
+          <Link
+            to="/recuperar-senha"
+            className="text-sm text-blue-600 hover:text-blue-800 hover:underline transition-colors"
+          > 
+            Esqueci minha senha
+          </Link>
+        </div>
+
       </div>
     </div>
   );
