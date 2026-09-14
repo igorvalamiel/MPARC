@@ -3,13 +3,9 @@ CREATE TABLE IF NOT EXISTS usuarios (
     profissional_id VARCHAR(100),
     nome VARCHAR(100) NOT NULL,
     numeroConselho VARCHAR(100),
-    cpf VARCHAR(100) NOT NULL
+    cpf VARCHAR(100) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL
 );
-
-INSERT INTO usuarios (nome, cpf) VALUES 
-('Igor Dev', '00000000000');
-
-
 
 
 CREATE TYPE ClassRisc AS ENUM ('Azul', 'Verde', 'Amarelo', 'Laranja', 'Vermelho');
