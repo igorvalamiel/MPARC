@@ -1,30 +1,26 @@
-import { useEffect, useState } from 'react'
+import { Navigate, Route, Routes } from 'react-router-dom';
+import { AuthProvider } from './context/AuthContext';
+import ProtectedRoute from './routes/ProtectedRoute';
+import Login from './pages/Login';
+import Home from './pages/Home';
 
 function App() {
-  const [usuarios, setUsuarios] = useState([])
-
-  useEffect(() => {
-    fetch('http://localhost:3000/usuarios')
-      .then((res) => res.json())
-      .then((data) => setUsuarios(data))
-      .catch((err) => console.error('Erro ao buscar usuários:', err))
-  }, [])
-
   return (
-    <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
-      <h1>Aplicação 3-Tier Rodando! 🚀</h1>
-      <h2>Usuários do Banco:</h2>
-      {usuarios.length === 0 ? (
-        <p>Nenhum usuário cadastrado (Tabela vazia).</p>
-      ) : (
-        <ul>
-          {usuarios.map((u, i) => (
-            <li key={i}>{JSON.stringify(u)}</li>
-          ))}
-        </ul>
-      )}
-    </div>
-  )
+    <AuthProvider>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route
+          path="/"
+          element={
+            <ProtectedRoute>
+              <Home />
+            </ProtectedRoute>
+          }
+        />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </AuthProvider>
+  );
 }
 
-export default App
+export default App;

@@ -102,6 +102,26 @@ function autenticar(req, res, next) {
 
 //--------------------------------------------------------------------
 
+app.get('/me', autenticar, async (req, res) => {
+  try {
+    const { rows } = await pool.query(
+      'SELECT id, profissional_id, nome, numeroconselho, cpf FROM usuarios WHERE id = $1',
+      [req.usuario.id]
+    );
+
+    if (rows.length === 0) {
+      return res.status(404).json({ error: 'Usuário não encontrado' });
+    }
+
+    res.json(rows[0]);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Erro ao buscar usuário' });
+  }
+});
+
+//--------------------------------------------------------------------
+
 // Rota de teste para buscar usuários
 app.get('/usuarios', autenticar, async (req, res) => {
   // esse código só roda se "autenticar" chamou next()
