@@ -1,6 +1,12 @@
+import { useAuth } from '../context/AuthContext';
 
-function Home() {
-  return <h1>Home</h1>;
+export default function Home() {
+  const { usuario, sair } = useAuth();
+
+  return (
+    <div>
+      <h1>Bem-vindo(a), {usuario?.nome}</h1>
+      <button onClick={sair}>Sair</button>
+    </div>
+  );
 }
-
-export default Home
