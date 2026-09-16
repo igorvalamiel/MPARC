@@ -13,7 +13,7 @@ CREATE TYPE ClassRisc AS ENUM ('Azul', 'Verde', 'Amarelo', 'Laranja', 'Vermelho'
 CREATE TABLE IF NOT EXISTS classificacoes (
     id SERIAL PRIMARY KEY,
     profissional_id VARCHAR(100) NOT NULL,
-    boletim_id VARCHAR(100) NOT NULL,
+    boletim_id VARCHAR(100),
     classificacao ClassRisc NOT NULL,
     caminho VARCHAR(500) NOT NULL
 );

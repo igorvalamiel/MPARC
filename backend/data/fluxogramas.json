@@ -1,0 +1,2709 @@
+[
+  {
+    "id": "dor_abdominal_em_adultos",
+    "nome": "Dor abdominal em adultos",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Vômito com sangue",
+          "Eliminação de sangue fresco ou alterado pelo reto",
+          "Púrpura",
+          "Erupção não branqueável",
+          "Bebê quente",
+          "Muito quente",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Histórico de vômito agudo com sangue",
+          "Fezes escuras ou em groselha",
+          "Vômito persistente",
+          "Massa abdominal visível",
+          "Inconsolável pelos pais",
+          "Histórico inapropriado",
+          "Quente",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Vômito",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "dor_abdominal_em_criancas",
+    "nome": "Dor abdominal em crianças",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Vômito com sangue",
+          "Eliminação de sangue fresco ou alterado pelo reto",
+          "Púrpura",
+          "Erupção não branqueável",
+          "Bebê quente",
+          "Muito quente",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Histórico de vômito agudo com sangue",
+          "Fezes escuras ou em groselha",
+          "Vômito persistente",
+          "Massa abdominal visível",
+          "Inconsolável pelos pais",
+          "Histórico inapropriado",
+          "Quente",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Vômito",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "abscessos_e_infeccoes_locais",
+    "nome": "Abscessos e infecções locais",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Comprometimento vascular",
+          "Gás subcutâneo",
+          "Bebê quente",
+          "Muito quente",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Articulação quente",
+          "Dor ao movimento articular",
+          "Quente",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Calor",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "crianca_abusada_ou_negligenciada",
+    "nome": "Criança abusada ou negligenciada",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque",
+          "Irresponsivo"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Responde apenas à voz ou dor",
+          "Hemorragia maior não controlada",
+          "Alto risco de autolesão",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Hemorragia menor não controlada",
+          "Sinais de desidratação",
+          "Erupção ou bolhas generalizadas",
+          "Sofrimento acentuado",
+          "Trauma vaginal",
+          "Histórico de inconsciência",
+          "Risco moderado de autolesão",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "alergia",
+    "nome": "Alergia",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Estridor",
+          "Choque",
+          "Criança irresponsiva"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Edema da língua",
+          "Edema facial",
+          "Incapaz de falar em frases",
+          "SpO2 muito baixo",
+          "Pulso anormal novo",
+          "Nível de consciência alterado",
+          "Histórico significativo de alergia",
+          "Dor ou coceira intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "SpO2 baixo",
+          "Erupção ou bolhas generalizadas",
+          "Dor ou coceira moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Inflamação local",
+          "Dor ou coceira leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "aparentemente_embriagado",
+    "nome": "Aparentemente embriagado",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque",
+          "Criança irresponsiva",
+          "Convulsionando no momento",
+          "Hipoglicemia"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Nível de consciência alterado não totalmente atribuível ao álcool",
+          "Déficit neurológico novo com menos de 24h",
+          "Histórico inadequado",
+          "Frio"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Nível de consciência alterado totalmente atribuível ao álcool",
+          "Déficit neurológico novo com mais de 24h",
+          "Histórico de inconsciência",
+          "Histórico de traumatismo craniano",
+          "Histórico inapropriado"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Lesão recente",
+          "Dor leve recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "agressao",
+    "nome": "Agressão",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Hemorragia exsanguinante",
+          "Choque"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Dispneia aguda grave",
+          "Hemorragia maior não controlada",
+          "Déficit neurológico novo com menos de 24h",
+          "Mecanismo de lesão significativo",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Hemorragia menor não controlada",
+          "Déficit neurológico novo com mais de 24h",
+          "Histórico de inconsciência",
+          "Histórico inapropriado",
+          "Deformidade",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Edema",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "asma",
+    "nome": "Asma",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque",
+          "Criança irresponsiva"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Incapaz de falar em frases",
+          "SpO2 muito baixo",
+          "PFE muito baixo",
+          "Pulso anormal novo",
+          "Nível de consciência alterado",
+          "Histórico respiratório significativo",
+          "Muito quente"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "SpO2 baixo",
+          "PFE baixo",
+          "Sem melhora com medicação própria para asma",
+          "Quente"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Chiado",
+          "Tosse produtiva",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "dor_nas_costas",
+    "nome": "Dor nas costas",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Déficit neurológico novo com menos de 24h",
+          "Mecanismo de lesão significativo",
+          "Muito quente",
+          "Dor abdominal",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Déficit neurológico novo com mais de 24h",
+          "Trauma direto nas costas",
+          "Incapaz de andar",
+          "Quente",
+          "Histórico inapropriado",
+          "Dor cólica",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "comportamento_estranho",
+    "nome": "Comportamento estranho",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque",
+          "Hipoglicemia",
+          "Criança irresponsiva"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Nível de consciência alterado",
+          "Déficit neurológico novo com menos de 24h",
+          "Histórico de overdose ou envenenamento",
+          "Alto risco de autolesão",
+          "Alto risco de dano a outros"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Déficit neurológico novo com mais de 24h",
+          "Histórico de traumatismo craniano",
+          "Histórico de inconsciência",
+          "Histórico psiquiátrico significativo",
+          "Risco moderado de autolesão",
+          "Risco moderado de dano a outros"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "picadas_e_mordidas",
+    "nome": "Picadas e mordidas",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Estridor",
+          "Hemorragia exsanguinante",
+          "Choque",
+          "Criança irresponsiva"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Edema facial",
+          "Edema da língua",
+          "Incapaz de falar em frases",
+          "Hemorragia maior não controlada",
+          "SpO2 muito baixo",
+          "Nível de consciência alterado",
+          "Envenenamento de alta letalidade",
+          "Histórico significativo de alergia",
+          "Bebê quente",
+          "Muito quente",
+          "Dor ou coceira intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "SpO2 baixo",
+          "Hemorragia menor não controlada",
+          "Envenenamento de moderada letalidade",
+          "Erupção ou bolhas generalizadas",
+          "Quente",
+          "Dor ou coceira moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Infecção local",
+          "Inflamação local",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "queimaduras_e_escaldaduras",
+    "nome": "Queimaduras e escaldaduras",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Estridor",
+          "Choque",
+          "Criança irresponsiva"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Edema facial",
+          "Lesão por inalação",
+          "Dispneia aguda grave",
+          "SpO2 muito baixo",
+          "Nível de consciência alterado",
+          "Produto químico de alta letalidade",
+          "Mecanismo de lesão significativo",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "SpO2 baixo",
+          "Exposição à fumaça",
+          "Lesão elétrica",
+          "Produto químico de moderada letalidade",
+          "Histórico inapropriado",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Infecção local",
+          "Inflamação local",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "exposicao_quimica",
+    "nome": "Exposição química",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Estridor",
+          "Respiração inadequada",
+          "Choque",
+          "Criança irresponsiva",
+          "Convulsionando no momento",
+          "Lesão ocular química aguda"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Edema da língua",
+          "Edema facial",
+          "SpO2 muito baixo",
+          "Pulso anormal novo",
+          "Nível de consciência alterado",
+          "Produto químico de alta letalidade",
+          "Risco de contaminação contínua",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "SpO2 baixo",
+          "Secreção ou bolhas generalizadas",
+          "Produto químico de moderada letalidade",
+          "Histórico inapropriado",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "dor_toracica",
+    "nome": "Dor torácica",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Dispneia aguda grave",
+          "SpO2 muito baixo",
+          "Pulso anormal novo",
+          "Dor cardíaca",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "SpO2 baixo",
+          "Vômito persistente",
+          "Histórico cardíaco significativo",
+          "Dor pleurítica",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Vômito",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "adulto_colapsado",
+    "nome": "Adulto colapsado",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque",
+          "Hipoglicemia",
+          "Convulsionando no momento"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Dispneia aguda grave",
+          "SpO2 muito baixo",
+          "Pulso anormal novo",
+          "Nível de consciência alterado",
+          "Déficit neurológico novo com menos de 24h",
+          "Púrpura",
+          "Erupção não branqueável",
+          "Histórico significativo de alergia",
+          "Muito quente",
+          "Frio",
+          "Dor cardíaca",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Histórico de inconsciência",
+          "Déficit neurológico novo com mais de 24h",
+          "Histórico inapropriado",
+          "Quente",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Calor",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "bebe_chorando",
+    "nome": "Bebê chorando",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque",
+          "Irresponsivo"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Hipotônico",
+          "Responde apenas à voz ou dor",
+          "Púrpura",
+          "Erupção não branqueável",
+          "Bebê quente",
+          "Muito quente",
+          "Sinais de dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Histórico de inconsciência",
+          "Incapaz de se alimentar",
+          "Inconsolável pelos pais",
+          "Choro prolongado ou ininterrupto",
+          "Histórico inapropriado",
+          "Quente",
+          "Sinais de dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Comportamento atípico",
+          "Calor",
+          "Sinais recentes de dor leve",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "problemas_dentarios",
+    "nome": "Problemas dentários",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Hemorragia maior não controlada",
+          "Muito quente",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Dente avulsionado agudamente",
+          "Hemorragia menor não controlada",
+          "Histórico inapropriado",
+          "Quente",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Edema facial",
+          "Calor",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "diabetes",
+    "nome": "Diabetes",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque",
+          "Irresponsivo",
+          "Hipoglicemia"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Nível de consciência alterado",
+          "Hiperglicemia com cetose",
+          "Bebê quente",
+          "Muito quente",
+          "Dor intensa",
+          "Frio"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Hiperglicemia",
+          "Vômito persistente",
+          "Quente",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Vômito",
+          "Calor",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "diarreia_e_vomito",
+    "nome": "Diarreia e vômito",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque",
+          "Criança irresponsiva"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Hipotônico",
+          "Nível de consciência alterado",
+          "Não reage aos pais",
+          "Vômito com sangue",
+          "Eliminação de sangue fresco ou alterado pelo reto",
+          "Bebê quente",
+          "Muito quente",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Histórico de vômito agudo com sangue",
+          "Fezes escuras ou em groselha",
+          "Vômito persistente",
+          "Sinais de desidratação",
+          "Quente",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Vômito",
+          "Calor",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "problemas_de_ouvido",
+    "nome": "Problemas de ouvido",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque",
+          "Criança irresponsiva"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Nível de consciência alterado",
+          "Hemorragia maior não controlada",
+          "Bebê quente",
+          "Muito quente",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Hemorragia menor não controlada",
+          "Histórico de traumatismo craniano",
+          "Vômito persistente",
+          "Histórico inapropriado",
+          "Quente",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Hematoma auricular",
+          "Vertigem",
+          "Perda auditiva recente",
+          "Calor",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "problemas_oculares",
+    "nome": "Problemas oculares",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Lesão ocular química aguda",
+          "Lesão ocular penetrante",
+          "Perda visual completa aguda",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Acuidade visual reduzida recente",
+          "Histórico inapropriado",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Olho vermelho",
+          "Sensação de corpo estranho",
+          "Diplopia",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "problemas_faciais",
+    "nome": "Problemas faciais",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Hemorragia exsanguinante",
+          "Choque",
+          "Criança irresponsiva"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Hemorragia maior não controlada",
+          "Nível de consciência alterado",
+          "Déficit neurológico novo com menos de 24h",
+          "Bebê quente",
+          "Muito quente",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Hemorragia menor não controlada",
+          "Déficit neurológico novo com mais de 24h",
+          "Deformidade grosseira",
+          "Acuidade visual reduzida recente",
+          "Dente avulsionado agudamente",
+          "Histórico de inconsciência",
+          "Distúrbio hemorrágico",
+          "Histórico inapropriado",
+          "Quente",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Edema facial",
+          "Hematoma auricular",
+          "Diplopia",
+          "Sensação facial alterada",
+          "Olho vermelho",
+          "Calor",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "quedas",
+    "nome": "Quedas",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque",
+          "Criança irresponsiva",
+          "Convulsionando no momento",
+          "Hipoglicemia"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Pulso anormal novo",
+          "Hemorragia maior não controlada",
+          "Nível de consciência alterado",
+          "Déficit neurológico agudo novo com menos de 24h",
+          "Mecanismo de lesão significativo",
+          "Muito quente",
+          "Frio",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Hemorragia menor não controlada",
+          "Déficit neurológico novo com mais de 24h",
+          "Deformidade grosseira",
+          "Fratura exposta",
+          "Histórico de inconsciência",
+          "Histórico inapropriado",
+          "Quente",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Dor leve recente",
+          "Deformidade",
+          "Edema",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "convulsoes",
+    "nome": "Convulsões",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Convulsionando no momento",
+          "Choque",
+          "Criança irresponsiva",
+          "Hipoglicemia"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Nível de consciência alterado",
+          "Déficit neurológico novo com menos de 24h",
+          "Sinais de meningite",
+          "Erupção não branqueável",
+          "Púrpura",
+          "Histórico de overdose ou envenenamento",
+          "Bebê quente",
+          "Muito quente"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Déficit neurológico novo com mais de 24h",
+          "Histórico de traumatismo craniano",
+          "Histórico inapropriado",
+          "Quente"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Cefaleia",
+          "Calor",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "corpo_estranho",
+    "nome": "Corpo estranho",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Estridor",
+          "Respiração inadequada",
+          "Hemorragia exsanguinante",
+          "Choque",
+          "Criança irresponsiva"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Hemorragia maior não controlada",
+          "Nível de consciência alterado",
+          "Lesão ocular penetrante",
+          "Mecanismo de lesão significativo",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Hemorragia menor não controlada",
+          "Histórico inapropriado",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Olho vermelho",
+          "Infecção local",
+          "Inflamação local",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "hemorragia_gastrointestinal",
+    "nome": "Hemorragia gastrointestinal",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Hemorragia exsanguinante",
+          "Choque",
+          "Criança irresponsiva"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Vômito com sangue",
+          "Eliminação de sangue fresco ou alterado pelo reto",
+          "Nível de consciência alterado",
+          "Histórico significativo de hemorragia gastrointestinal",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Histórico de vômito agudo com sangue",
+          "Fezes escuras ou em groselha",
+          "Distúrbio hemorrágico",
+          "Vômito persistente",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Vômito",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "cefaleia",
+    "nome": "Cefaleia",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque",
+          "Criança irresponsiva",
+          "Convulsionando no momento"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Nível de consciência alterado",
+          "Déficit neurológico novo com menos de 24h",
+          "Sinais de meningismo",
+          "Púrpura",
+          "Erupção não branqueável",
+          "Início abrupto",
+          "Perda visual completa aguda",
+          "Muito quente",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Déficit neurológico novo com mais de 24h",
+          "Acuidade visual reduzida recente",
+          "Sensibilidade no couro cabeludo temporal",
+          "Histórico de inconsciência",
+          "Vômito persistente",
+          "Histórico inapropriado",
+          "Quente",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Vômito",
+          "Calor",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "traumatismo_craniano",
+    "nome": "Traumatismo craniano",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Hemorragia exsanguinante",
+          "Choque",
+          "Criança irresponsiva",
+          "Convulsionando no momento"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Hemorragia maior não controlada",
+          "Nível de consciência alterado",
+          "Déficit neurológico novo com menos de 24h",
+          "Mecanismo de lesão significativo",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Hemorragia menor não controlada",
+          "Déficit neurológico novo com mais de 24h",
+          "Vômito persistente",
+          "Histórico de inconsciência",
+          "Distúrbio hemorrágico",
+          "Histórico inapropriado",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Hematoma no couro cabeludo",
+          "Vômito",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "crianca_irritada",
+    "nome": "Criança irritada",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque",
+          "Irresponsivo",
+          "Hipoglicemia"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "SpO2 muito baixo",
+          "Responde apenas à voz ou dor",
+          "Sinais de meningismo",
+          "Púrpura",
+          "Erupção não branqueável",
+          "Histórico de overdose ou envenenamento",
+          "Muito quente",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "SpO2 baixo",
+          "Choro prolongado ou ininterrupto",
+          "Não se alimenta",
+          "Não distraível",
+          "Histórico inapropriado",
+          "Quente",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Comportamento atípico",
+          "Sinais recentes de dor leve",
+          "Calor",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "problemas_de_membros",
+    "nome": "Problemas de membros",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Hemorragia exsanguinante",
+          "Choque"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Dispneia aguda grave",
+          "Hemorragia maior não controlada",
+          "Comprometimento vascular",
+          "Déficit neurológico novo com menos de 24h",
+          "Pele crítica",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Hemorragia menor não controlada",
+          "Déficit neurológico novo com mais de 24h",
+          "Deformidade grosseira",
+          "Fratura exposta",
+          "Distúrbio hemorrágico",
+          "Histórico inapropriado",
+          "Dor pleurítica",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Deformidade",
+          "Edema",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "crianca_mancando",
+    "nome": "Criança mancando",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Comprometimento vascular",
+          "Púrpura",
+          "Erupção não branqueável",
+          "Bebê quente",
+          "Muito quente",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Articulação quente",
+          "Dor ao movimento articular",
+          "Distúrbio hemorrágico",
+          "Histórico inapropriado",
+          "Quente",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Deformidade",
+          "Edema",
+          "Calor",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "trauma_maior",
+    "nome": "Trauma maior",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Hemorragia exsanguinante",
+          "Choque",
+          "Criança irresponsiva"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Dispneia aguda grave",
+          "Hemorragia maior não controlada",
+          "Nível de consciência alterado",
+          "Déficit neurológico novo com menos de 24h",
+          "Mecanismo de lesão significativo",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Hemorragia menor não controlada",
+          "Histórico de inconsciência",
+          "Histórico médico significativo",
+          "Dor moderada"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doenca_mental",
+    "nome": "Doença mental",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque",
+          "Hipoglicemia",
+          "Criança irresponsiva"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Nível de consciência alterado",
+          "Alto risco de autolesão",
+          "Alto risco de dano a outros"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Risco moderado de autolesão",
+          "Risco moderado de dano a outros",
+          "Sofrimento acentuado",
+          "Histórico psiquiátrico significativo",
+          "Disruptivo"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "dor_no_pescoco",
+    "nome": "Dor no pescoço",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Déficit neurológico novo com menos de 24h",
+          "Sinais de meningismo",
+          "Púrpura",
+          "Erupção não branqueável",
+          "Muito quente",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Déficit neurológico novo com mais de 24h",
+          "Trauma direto no pescoço",
+          "Quente",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "overdose_e_envenenamento",
+    "nome": "Overdose e envenenamento",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque",
+          "Criança irresponsiva",
+          "Convulsionando no momento",
+          "Hipoglicemia"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "SpO2 muito baixo",
+          "Pulso anormal novo",
+          "Nível de consciência alterado",
+          "Alta letalidade",
+          "Alto risco de nova autolesão"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "SpO2 baixo",
+          "Sofrimento acentuado",
+          "Moderada letalidade",
+          "Risco moderado de nova autolesão",
+          "Histórico de inconsciência",
+          "Histórico psiquiátrico significativo"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "palpitacoes",
+    "nome": "Palpitações",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Dispneia aguda grave",
+          "Pulso anormal novo",
+          "Nível de consciência alterado",
+          "Histórico de overdose ou envenenamento",
+          "Dor cardíaca",
+          "Muito quente"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Histórico de inconsciência",
+          "Palpitação atual",
+          "Histórico cardíaco significativo",
+          "Quente"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "gravidez",
+    "nome": "Gravidez",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Convulsionando no momento",
+          "Hemorragia exsanguinante",
+          "Choque",
+          "Criança irresponsiva",
+          "Cordão umbilical prolapsado",
+          "Partes fetais apresentando-se"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Perda sanguínea vaginal intensa",
+          "Perda sanguínea vaginal com 20 semanas ou mais de gestação",
+          "Nível de consciência alterado",
+          "Em trabalho de parto ativo",
+          "Histórico de convulsões",
+          "Muito quente",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Pressão arterial elevada",
+          "Perda sanguínea vaginal",
+          "Histórico de trauma",
+          "Histórico inapropriado",
+          "Quente",
+          "Dor na ponta do ombro",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Calor",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "sangramento_vaginal",
+    "nome": "Sangramento vaginal (PV)",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Hemorragia exsanguinante",
+          "Choque",
+          "Criança irresponsiva"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Perda sanguínea vaginal intensa",
+          "Perda sanguínea vaginal com 20 semanas ou mais de gestação",
+          "Nível de consciência alterado",
+          "Muito quente",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Trauma vaginal",
+          "Possivelmente grávida",
+          "Histórico inapropriado",
+          "Dor abdominal",
+          "Dor na ponta do ombro",
+          "Quente",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "erupcoes_cutaneas",
+    "nome": "Erupções cutâneas",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Estridor",
+          "Choque",
+          "Criança irresponsiva"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Edema da língua",
+          "Edema facial",
+          "Dispneia aguda grave",
+          "Nível de consciência alterado",
+          "Púrpura",
+          "Erupção não branqueável",
+          "Histórico significativo de alergia",
+          "Bebê quente",
+          "Muito quente",
+          "Dor ou coceira intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Secreção ou bolhas generalizadas",
+          "Histórico inapropriado",
+          "Quente",
+          "Dor ou coceira moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Calor",
+          "Dor ou coceira leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "autolesao",
+    "nome": "Autolesão",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque",
+          "Criança irresponsiva"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Dispneia aguda grave",
+          "Hemorragia maior não controlada",
+          "Nível de consciência alterado",
+          "Alto risco de novo dano",
+          "Mecanismo de lesão significativo",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Hemorragia menor não controlada",
+          "Sofrimento acentuado",
+          "Risco moderado de nova autolesão",
+          "Histórico psiquiátrico significativo",
+          "Histórico inapropriado",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "infeccao_sexualmente_adquirida",
+    "nome": "Infecção sexualmente adquirida",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Nível de consciência alterado",
+          "Púrpura",
+          "Erupção não branqueável",
+          "Imunossupressão conhecida ou provável",
+          "Muito quente",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Secreção ou bolhas generalizadas",
+          "Articulação quente",
+          "Dor ao movimento articular",
+          "Quente",
+          "Dor testicular",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Secreção",
+          "Calor",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "falta_de_ar_em_adultos",
+    "nome": "Falta de ar em adultos",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Estridor",
+          "Sialorreia",
+          "Respiração inadequada",
+          "Choque"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Incapaz de falar em frases",
+          "SpO2 muito baixo",
+          "Exaustão",
+          "PFE muito baixo",
+          "Pulso anormal novo",
+          "Nível de consciência alterado",
+          "Histórico respiratório significativo",
+          "Início agudo após lesão",
+          "Dor cardíaca",
+          "Muito quente"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "SpO2 baixo",
+          "PFE baixo",
+          "Dor pleurítica",
+          "Quente"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Chiado",
+          "Tosse produtiva",
+          "Lesão torácica",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "falta_de_ar_em_criancas",
+    "nome": "Falta de ar em crianças",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Estridor",
+          "Sialorreia",
+          "Respiração inadequada",
+          "Choque",
+          "Irresponsivo"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Incapaz de falar em frases",
+          "SpO2 muito baixo",
+          "Aumento do trabalho respiratório",
+          "Exaustão",
+          "PFE muito baixo",
+          "Pulso anormal novo",
+          "Responde apenas à voz ou dor",
+          "Histórico respiratório significativo",
+          "Início agudo após lesão",
+          "Bebê quente",
+          "Muito quente"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "SpO2 baixo",
+          "PFE baixo",
+          "Histórico inapropriado",
+          "Dor pleurítica",
+          "Quente"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Chiado",
+          "Tosse produtiva",
+          "Lesão torácica",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "dor_de_garganta",
+    "nome": "Dor de garganta",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Estridor",
+          "Sialorreia",
+          "Respiração inadequada",
+          "Choque",
+          "Criança irresponsiva"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Nível de consciência alterado",
+          "Imunossupressão conhecida ou provável",
+          "Risco especial de infecção",
+          "Bebê quente",
+          "Muito quente",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Início rápido",
+          "Histórico de viagem recente ao exterior",
+          "Quente",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Calor",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "dor_testicular",
+    "nome": "Dor testicular",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Gangrena escrotal",
+          "Idade de 25 anos ou menos",
+          "Bebê quente",
+          "Muito quente",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Celulite escrotal",
+          "Vômito persistente",
+          "Quente",
+          "Dor cólica",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Trauma escrotal",
+          "Vômito",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "lesao_no_tronco",
+    "nome": "Lesão no tronco",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Hemorragia exsanguinante",
+          "Choque",
+          "Criança irresponsiva"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Dispneia aguda grave",
+          "Hemorragia maior não controlada",
+          "Nível de consciência alterado",
+          "Exteriorização de órgãos",
+          "Mecanismo de lesão significativo",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Hemorragia menor não controlada",
+          "Histórico inapropriado",
+          "Dor pleurítica",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Infecção local",
+          "Inflamação local",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "adulto_doente",
+    "nome": "Adulto doente",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque",
+          "Hipoglicemia",
+          "Convulsionando no momento"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "SpO2 muito baixo",
+          "Pulso anormal novo",
+          "Nível de consciência alterado",
+          "Déficit neurológico novo com menos de 24h",
+          "Sinais de meningismo",
+          "Púrpura",
+          "Erupção não branqueável",
+          "Imunossupressão conhecida ou provável",
+          "Risco especial de infecção",
+          "Muito quente",
+          "Frio",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "SpO2 baixo",
+          "Déficit neurológico novo com mais de 24h",
+          "Secreção ou bolhas generalizadas",
+          "Início rápido",
+          "Histórico de viagem recente ao exterior",
+          "Histórico hematológico significativo",
+          "Quente",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Calor",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "bebe_doente",
+    "nome": "Bebê doente (até 12 meses)",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque",
+          "Irresponsivo",
+          "Convulsionando no momento",
+          "Hipoglicemia"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "SpO2 muito baixo",
+          "Pulso anormal novo",
+          "Responde apenas à voz ou dor",
+          "Não reage aos pais",
+          "Sinais de meningismo",
+          "Púrpura",
+          "Imunossupressão conhecida ou provável",
+          "Erupção não branqueável",
+          "Bebê quente",
+          "Frio",
+          "Sinais de dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "SpO2 baixo",
+          "Sinais de desidratação",
+          "Não se alimenta",
+          "Não urina",
+          "Histórico inapropriado",
+          "Histórico hematológico significativo",
+          "Sinais de dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Calor",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "crianca_doente",
+    "nome": "Criança doente",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque",
+          "Irresponsivo",
+          "Convulsionando no momento",
+          "Hipoglicemia"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "SpO2 muito baixo",
+          "Pulso anormal novo",
+          "Responde apenas à voz ou dor",
+          "Não reage aos pais",
+          "Sinais de meningismo",
+          "Púrpura",
+          "Imunossupressão conhecida ou provável",
+          "Erupção não branqueável",
+          "Muito quente",
+          "Frio",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "SpO2 baixo",
+          "Sinais de desidratação",
+          "Não se alimenta",
+          "Não urina",
+          "Histórico inapropriado",
+          "Histórico hematológico significativo",
+          "Quente",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Comportamento atípico",
+          "Calor",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "recem_nascido_doente",
+    "nome": "Recém-nascido doente (até 28 dias)",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque",
+          "Irresponsivo",
+          "Convulsionando no momento",
+          "Hipoglicemia"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "SpO2 muito baixo",
+          "Pulso anormal novo",
+          "Responde apenas à voz ou dor",
+          "Não reage aos pais",
+          "Sinais de meningismo",
+          "Púrpura",
+          "Erupção não branqueável",
+          "Bebê quente",
+          "Frio",
+          "Sinais de dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "SpO2 baixo",
+          "Sinais de desidratação",
+          "Não se alimenta",
+          "Não urina",
+          "Icterícia",
+          "Histórico inapropriado",
+          "Recém-nascido aquecido",
+          "Sinais de dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "problemas_urinarios",
+    "nome": "Problemas urinários",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Hemorragia exsanguinante",
+          "Choque"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Priapismo",
+          "Imunossupressão conhecida ou provável",
+          "Bebê quente",
+          "Muito quente",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Hematúria franca",
+          "Vômito persistente",
+          "Retenção urinária",
+          "Quente",
+          "Dor cólica",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Vômito",
+          "Disúria",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "pai_preocupado",
+    "nome": "Pai preocupado",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Choque",
+          "Irresponsivo"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "SpO2 muito baixo",
+          "Hipotônico",
+          "Responde apenas à voz ou dor",
+          "Não reage aos pais",
+          "Púrpura",
+          "Erupção não branqueável",
+          "Histórico de overdose ou envenenamento",
+          "Imunossupressão conhecida ou provável",
+          "Bebê quente",
+          "Muito quente",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "SpO2 baixo",
+          "Sinais de desidratação",
+          "Não se alimenta",
+          "Não urina",
+          "Inconsolável pelos pais",
+          "Choro prolongado ou interrompido",
+          "Histórico inapropriado",
+          "Quente",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Comportamento atípico",
+          "Calor",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "feridas",
+    "nome": "Feridas",
+    "niveis": [
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Via aérea comprometida",
+          "Respiração inadequada",
+          "Hemorragia exsanguinante",
+          "Choque"
+        ]
+      },
+      {
+        "cor": "Laranja",
+        "discriminadores": [
+          "Hemorragia maior não controlada",
+          "Déficit neurológico novo com menos de 24h",
+          "Comprometimento vascular distal",
+          "Bebê quente",
+          "Muito quente",
+          "Dor intensa"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Hemorragia menor não controlada",
+          "Déficit neurológico novo com mais de 24h",
+          "Trauma vaginal",
+          "Histórico inapropriado",
+          "Quente",
+          "Dor moderada"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Infecção local",
+          "Inflamação local",
+          "Dor leve recente",
+          "Problema recente"
+        ]
+      },
+      {
+        "cor": "Azul",
+        "discriminadores": []
+      }
+    ]
+  },
+  {
+    "id": "incidente_maior_primario",
+    "nome": "Incidente maior - primário",
+    "niveis": [
+      {
+        "cor": "Preto",
+        "discriminadores": [
+          "Não respira após abertura da via aérea"
+        ]
+      },
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "Respiração espontânea com frequência respiratória anormal (mais de 29 ou menos de 10)",
+          "Tempo de enchimento capilar anormal (mais de 2 segundos)",
+          "Pulso anormal (mais de 120/min)"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "Respiração espontânea com frequência respiratória normal e tempo de enchimento capilar/pulso normais"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "Caminhando"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "incidente_maior_secundario",
+    "nome": "Incidente maior - secundário",
+    "niveis": [
+      {
+        "cor": "Preto",
+        "discriminadores": [
+          "TRTS 0"
+        ]
+      },
+      {
+        "cor": "Vermelho",
+        "discriminadores": [
+          "TRTS 10 ou menos"
+        ]
+      },
+      {
+        "cor": "Amarelo",
+        "discriminadores": [
+          "TRTS 11"
+        ]
+      },
+      {
+        "cor": "Verde",
+        "discriminadores": [
+          "TRTS 12"
+        ]
+      }
+    ]
+  }
+]

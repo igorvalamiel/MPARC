@@ -139,4 +139,24 @@ app.listen(3000, () => {
   console.log('API rodando na porta 3000');
 });
 
+// --------------------------------------------------------------------
+// Importando arquivo dos fluxogramas
 
+const fluxogramas = require('./data/fluxogramas.json');
+
+// Lista leve: só id e nome, pra tela de "escolha o fluxograma"
+app.get('/fluxogramas', autenticar, (req, res) => {
+  const lista = fluxogramas.map(({ id, nome }) => ({ id, nome }));
+  res.json(lista);
+});
+
+// Um fluxograma completo, com os níveis e discriminadores
+app.get('/fluxogramas/:id', autenticar, (req, res) => {
+  const fluxograma = fluxogramas.find((f) => f.id === req.params.id);
+
+  if (!fluxograma) {
+    return res.status(404).json({ error: 'Fluxograma não encontrado' });
+  }
+
+  res.json(fluxograma);
+});

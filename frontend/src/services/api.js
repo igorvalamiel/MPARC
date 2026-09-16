@@ -44,3 +44,35 @@ export async function getMe() {
 
   return data;
 }
+
+export async function getFluxogramas() {
+  const token = getToken();
+
+  const res = await fetch(`${API_URL}/fluxogramas`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+
+  const data = await res.json();
+
+  if (!res.ok) {
+    throw new Error(data.error || 'Erro ao buscar fluxogramas');
+  }
+
+  return data;
+}
+
+export async function getFluxograma(id) {
+  const token = getToken();
+
+  const res = await fetch(`${API_URL}/fluxogramas/${id}`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+
+  const data = await res.json();
+
+  if (!res.ok) {
+    throw new Error(data.error || 'Erro ao buscar fluxograma');
+  }
+
+  return data;
+}
