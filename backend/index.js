@@ -160,3 +160,29 @@ app.get('/fluxogramas/:id', autenticar, (req, res) => {
 
   res.json(fluxograma);
 });
+
+app.post('/classificacoes', autenticar, async (req, res) => {
+  const { boletimId, fluxograma, cor, discriminador } = req.body;
+
+  if (!fluxograma || !cor) {
+    return res.status(400).json({ error: 'Dados da classificação incompletos' });
+  }
+
+  const caminho = discriminador
+    ? `${fluxograma} > ${cor} > ${discriminador}`
+    : `${fluxograma} > ${cor}`;
+
+  try {
+    const { rows } = await pool.query(
+      `INSERT INTO classificacoes (profissional_id, boletim_id, classificacao, caminho)
+       VALUES ($1, $2, $3, $4)
+       RETURNING *`,
+      [String(req.usuario.id), boletimId || null, cor, caminho]
+    );
+
+    res.status(201).json(rows[0]);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Erro ao salvar classificação' });
+  }
+});

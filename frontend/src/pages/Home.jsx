@@ -20,14 +20,15 @@ export default function Home() {
         <p className="home-subtitle">O que você quer fazer agora?</p>
 
         <div className="home-actions">
-          <Link to="/classificacoes" className="action-card">
-            <span className="action-title">Classificações de hoje</span>
-            <span className="action-desc">Consultar o que já foi registrado</span>
-          </Link>
 
           <Link to="/classificacoes/nova" className="action-card action-primary">
             <span className="action-title">Nova classificação</span>
             <span className="action-desc">Registrar um novo atendimento</span>
+          </Link>
+
+          <Link to="/classificacoes" className="action-card">
+            <span className="action-title">Histórico de Classificações</span>
+            <span className="action-desc">Consultar o que já foi registrado</span>
           </Link>
 
           <button className="action-card action-danger" onClick={sair}>

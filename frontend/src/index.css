@@ -13,6 +13,9 @@
   --risco-amarelo: #e8b923;
   --risco-laranja: #e8792b;
   --risco-vermelho: #d5372b;
+
+  --serif: 'Source Serif 4', Georgia, serif;
+  --brand-soft: rgba(15, 110, 93, 0.08);
 }
 
 * {

@@ -76,3 +76,24 @@ export async function getFluxograma(id) {
 
   return data;
 }
+
+export async function criarClassificacao(dados) {
+  const token = getToken();
+
+  const res = await fetch(`${API_URL}/classificacoes`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify(dados),
+  });
+
+  const data = await res.json();
+
+  if (!res.ok) {
+    throw new Error(data.error || 'Erro ao salvar classificação');
+  }
+
+  return data;
+}

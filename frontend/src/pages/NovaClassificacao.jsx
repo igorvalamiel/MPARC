@@ -1,5 +1,15 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import * as api from '../services/api';
+import './NovaClassificacao.css';
+
+const CLASSE_COR = {
+  Vermelho: 'vermelho',
+  Laranja: 'laranja',
+  Amarelo: 'amarelo',
+  Verde: 'verde',
+  Azul: 'azul',
+};
 
 export default function NovaClassificacao() {
   const [etapa, setEtapa] = useState('formulario');
@@ -50,16 +60,6 @@ export default function NovaClassificacao() {
     setEtapa('resultado');
   }
 
-  function avancarNivel() {
-    setIndiceNivel((i) => i + 1);
-  }
-
-  function usarOutroFluxograma() {
-    setFluxogramaAtual(null);
-    setIndiceNivel(0);
-    setEtapa('escolha-fluxograma');
-  }
-
   function nenhumDesses() {
     const niveis = fluxogramaAtual.niveis;
     const ehUltimoNivel = indiceNivel === niveis.length - 1;
@@ -71,92 +71,165 @@ export default function NovaClassificacao() {
     }
   }
 
-  if (etapa === 'formulario') {
-    return (
-      <form onSubmit={handleSubmit}>
-        <h1>Nova classificação</h1>
-        <label>
-          ID do paciente (opcional)
-          <input value={boletimId} onChange={(e) => setBoletimId(e.target.value)} />
-        </label>
-        <button type="submit">Continuar</button>
-      </form>
-    );
+  function usarOutroFluxograma() {
+    setFluxogramaAtual(null);
+    setIndiceNivel(0);
+    setEtapa('escolha-fluxograma');
   }
 
-  if (etapa === 'escolha-fluxograma') {
-    if (carregando) return <p>Carregando...</p>;
-    if (erro) return <p>{erro}</p>;
+  return (
+    <div className="nc-screen">
+      <header className="nc-topbar">
+        <Link to="/" className="nc-wordmark">MPARC</Link>
+        <Link to="/" className="nc-cancelar">Cancelar</Link>
+      </header>
 
-    return (
-      <div>
-        <h1>Escolha o fluxograma</h1>
-        {fluxogramas.map((f) => (
-          <button key={f.id} onClick={() => escolherFluxograma(f.id)}>
-            {f.nome}
-          </button>
-        ))}
-      </div>
-    );
-  }
+      <main className="nc-main">
+        {etapa === 'formulario' && (
+          <form className="nc-card" onSubmit={handleSubmit}>
+            <h1>Nova classificação</h1>
+            <p className="nc-subtitle">Preencha o que tiver disponível pra começar.</p>
 
-  if (etapa === 'wizard') {
-    const nivel = fluxogramaAtual.niveis[indiceNivel];
+            <label className="field">
+              <span>ID do paciente (opcional)</span>
+              <input
+                value={boletimId}
+                onChange={(e) => setBoletimId(e.target.value)}
+              />
+            </label>
 
-    // nível sem discriminadores (ex: Azul) é sempre o fim de linha automático
-    if (nivel.discriminadores.length === 0) {
-      return (
-        <div>
-          <h1>{fluxogramaAtual.nome}</h1>
-          <p>Nenhum discriminador anterior se aplicou.</p>
-          <button onClick={() => escolherDiscriminador(nivel, null)}>
-            Confirmar classificação {nivel.cor}
-          </button>
-          <button onClick={usarOutroFluxograma}>Usar outro fluxograma</button>
-        </div>
-      );
-    }
+            <button type="submit" className="nc-btn-primary">Continuar</button>
+          </form>
+        )}
 
-    return (
-      <div>
-        <h1>{fluxogramaAtual.nome}</h1>
-        <p>Nível: {nivel.cor}</p>
+        {etapa === 'escolha-fluxograma' && (
+          <div className="nc-card nc-card-wide">
+            <h1>Escolha o fluxograma</h1>
+            {carregando && <p className="nc-info">Carregando...</p>}
+            {erro && <p className="nc-erro">{erro}</p>}
 
-        {nivel.discriminadores.map((d) => (
-          <button key={d} onClick={() => escolherDiscriminador(nivel, d)}>
-            {d}
-          </button>
-        ))}
+            <div className="nc-grade-fluxogramas">
+              {fluxogramas.map((f) => (
+                <button
+                  key={f.id}
+                  className="nc-fluxograma-btn"
+                  onClick={() => escolherFluxograma(f.id)}
+                >
+                  {f.nome}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
 
-        <button onClick={nenhumDesses}>Nenhum desses se aplica</button>
-      </div>
-    );
-  }
+        {etapa === 'wizard' && (() => {
+          const nivel = fluxogramaAtual.niveis[indiceNivel];
+          const classeCor = CLASSE_COR[nivel.cor];
+          const semDiscriminadores = nivel.discriminadores.length === 0;
 
-  if (etapa === 'sem-classificacao') {
-    const nivel = fluxogramaAtual.niveis[indiceNivel];
+          return (
+            <div className="nc-card nc-card-wide">
+              <h1>{fluxogramaAtual.nome}</h1>
+              <div className={`nc-faixa nc-faixa-${classeCor}`}>
+                Nível avaliado: {nivel.cor}
+              </div>
 
-    return (
-      <div>
-        <h1>{fluxogramaAtual.nome}</h1>
-        <p>Nenhum discriminador se aplicou em nenhum nível verificado.</p>
-        <button onClick={() => escolherDiscriminador(nivel, null)}>
-          Confirmar classificação {nivel.cor}
-        </button>
-        <button onClick={usarOutroFluxograma}>Usar outro fluxograma</button>
-      </div>
-    );
-  }
+              {semDiscriminadores ? (
+                <>
+                  <p className="nc-info">Nenhum discriminador anterior se aplicou.</p>
+                  <div className="nc-acoes-finais">
+                    <button
+                      className="nc-btn-primary"
+                      onClick={() => escolherDiscriminador(nivel, null)}
+                    >
+                      Confirmar classificação {nivel.cor}
+                    </button>
+                    <button className="nc-btn-secundario" onClick={usarOutroFluxograma}>
+                      Usar outro fluxograma
+                    </button>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <ul className="nc-lista-discriminadores">
+                    {nivel.discriminadores.map((d) => (
+                      <li key={d}>
+                        <button onClick={() => escolherDiscriminador(nivel, d)}>
+                          {d}
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                  <button className="nc-btn-fantasma" onClick={nenhumDesses}>
+                    Nenhum desses se aplica
+                  </button>
+                </>
+              )}
+            </div>
+          );
+        })()}
 
-  if (etapa === 'resultado') {
-    return (
-      <div>
-        <h1>Classificação: {resultado.cor}</h1>
-        <p>Fluxograma: {resultado.fluxograma}</p>
-        <p>Motivo: {resultado.discriminador || 'Nenhum discriminador anterior se aplicou'}</p>
-      </div>
-    );
-  }
+        {etapa === 'sem-classificacao' && (() => {
+          const nivel = fluxogramaAtual.niveis[indiceNivel];
+          const classeCor = CLASSE_COR[nivel.cor];
 
-  return null;
+          return (
+            <div className="nc-card">
+              <h1>{fluxogramaAtual.nome}</h1>
+              <p className="nc-info">Nenhum discriminador se aplicou em nenhum nível verificado.</p>
+              <div className="nc-acoes-finais">
+                <button
+                  className={`nc-btn-primary nc-btn-${classeCor}`}
+                  onClick={() => escolherDiscriminador(nivel, null)}
+                >
+                  Confirmar classificação {nivel.cor}
+                </button>
+                <button className="nc-btn-secundario" onClick={usarOutroFluxograma}>
+                  Usar outro fluxograma
+                </button>
+              </div>
+            </div>
+          );
+        })()}
+
+        {etapa === 'resultado' && (
+          <div className={`nc-card nc-resultado nc-resultado-${CLASSE_COR[resultado.cor]}`}>
+            <span className="nc-resultado-cor">{resultado.cor}</span>
+            <h1>Classificação registrada</h1>
+            <p className="nc-info">Fluxograma: {resultado.fluxograma}</p>
+            <p className="nc-info">
+              Motivo: {resultado.discriminador || 'Nenhum discriminador se aplicou'}
+            </p>
+
+            {salvando && <p className="nc-info">Salvando…</p>}
+            {salvo && <p className="nc-info">✓ Salvo com sucesso</p>}
+            {erroSalvar && <p className="nc-info">Erro ao salvar: {erroSalvar}</p>}
+
+            <Link to="/" className="nc-btn-secundario">Voltar ao início</Link>
+          </div>
+        )}
+      </main>
+    </div>
+  );
 }
+
+const [salvando, setSalvando] = useState(false);
+const [erroSalvar, setErroSalvar] = useState('');
+const [salvo, setSalvo] = useState(false);
+
+useEffect(() => {
+  if (etapa !== 'resultado') return;
+
+  setSalvando(true);
+  setErroSalvar('');
+
+  api.criarClassificacao({
+    boletimId: boletimId || null,
+    fluxograma: resultado.fluxograma,
+    cor: resultado.cor,
+    discriminador: resultado.discriminador,
+  })
+    .then(() => setSalvo(true))
+    .catch((err) => setErroSalvar(err.message))
+    .finally(() => setSalvando(false));
+}, [etapa]);

@@ -1,0 +1,270 @@
+.nc-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nc-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.nc-wordmark {
+  font-family: var(--serif);
+  font-size: 20px;
+  color: var(--brand-dark);
+  text-decoration: none;
+}
+
+.nc-cancelar {
+  font-size: 14px;
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+
+.nc-cancelar:hover {
+  color: var(--ink);
+}
+
+.nc-main {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 56px 24px;
+}
+
+.nc-card {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nc-card-wide {
+  max-width: 640px;
+}
+
+.nc-subtitle {
+  color: var(--ink-soft);
+  margin-top: -8px;
+}
+
+.nc-info {
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
+.nc-erro {
+  color: var(--danger);
+  font-size: 14px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+.field input {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 11px 14px;
+  font-size: 15px;
+  color: var(--ink);
+  background: var(--surface);
+}
+
+.field input:focus-visible {
+  border-color: var(--brand);
+}
+
+.nc-btn-primary {
+  border: none;
+  border-radius: 8px;
+  background: var(--brand);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 12px 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nc-btn-primary:hover {
+  background: var(--brand-dark);
+}
+
+/* variações de cor pro botão de confirmar, na tela "sem-classificacao" */
+.nc-btn-vermelho { background: var(--risco-vermelho); }
+.nc-btn-laranja  { background: var(--risco-laranja); }
+.nc-btn-amarelo  { background: var(--risco-amarelo); color: #4a3900; }
+.nc-btn-verde    { background: var(--risco-verde); }
+.nc-btn-azul     { background: var(--risco-azul); }
+
+.nc-btn-secundario {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 15px;
+  padding: 12px 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nc-btn-secundario:hover {
+  border-color: var(--brand);
+  color: var(--brand-dark);
+}
+
+.nc-btn-fantasma {
+  border: none;
+  background: none;
+  color: var(--ink-soft);
+  font-size: 14px;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+  align-self: center;
+}
+
+.nc-acoes-finais {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nc-grade-fluxogramas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.nc-fluxograma-btn {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 14px;
+  padding: 14px 12px;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.nc-fluxograma-btn:hover {
+  border-color: var(--brand);
+  transform: translateY(-1px);
+}
+
+.nc-faixa {
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.nc-faixa-vermelho { background: var(--risco-vermelho); }
+.nc-faixa-laranja  { background: var(--risco-laranja); }
+.nc-faixa-amarelo  { background: var(--risco-amarelo); color: #4a3900; }
+.nc-faixa-verde    { background: var(--risco-verde); }
+.nc-faixa-azul     { background: var(--risco-azul); }
+
+.nc-lista-discriminadores {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nc-lista-discriminadores button {
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 15px;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.nc-lista-discriminadores button:hover {
+  border-color: var(--brand);
+  background: var(--brand-soft);
+}
+
+.nc-resultado {
+  align-items: center;
+  text-align: center;
+  padding: 40px 32px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+}
+
+.nc-resultado-cor {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 999px;
+  color: #ffffff;
+}
+
+/* a caixa inteira ganha a cor de fundo */
+.nc-resultado-vermelho { background: var(--risco-vermelho); border-color: var(--risco-vermelho); color: #ffffff; }
+.nc-resultado-laranja  { background: var(--risco-laranja);  border-color: var(--risco-laranja);  color: #ffffff; }
+.nc-resultado-amarelo  { background: var(--risco-amarelo);  border-color: var(--risco-amarelo);  color: #4a3900; }
+.nc-resultado-verde    { background: var(--risco-verde);    border-color: var(--risco-verde);    color: #ffffff; }
+.nc-resultado-azul     { background: var(--risco-azul);     border-color: var(--risco-azul);     color: #ffffff; }
+
+/* título e texto secundário herdam a cor do texto da caixa (branco ou escuro) */
+.nc-resultado h1,
+.nc-resultado .nc-info {
+  color: inherit;
+}
+
+.nc-resultado .nc-info {
+  opacity: 0.85;
+}
+
+/* o "selo" agora é só um destaque translúcido por cima da cor de fundo */
+.nc-resultado-cor {
+  background: rgba(255, 255, 255, 0.25);
+  color: inherit;
+}
+
+/* o botão "Voltar ao início" precisa de contraste diferente aqui dentro */
+.nc-resultado .nc-btn-secundario {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: inherit;
+}
+
+.nc-resultado .nc-btn-secundario:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+@media (max-width: 600px) {
+  .nc-topbar {
+    padding: 16px 20px;
+  }
+
+  .nc-main {
+    padding: 32px 16px;
+  }
+}
