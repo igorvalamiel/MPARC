@@ -15,5 +15,6 @@ CREATE TABLE IF NOT EXISTS classificacoes (
     profissional_id VARCHAR(100) NOT NULL,
     boletim_id VARCHAR(100),
     classificacao ClassRisc NOT NULL,
-    caminho VARCHAR(500) NOT NULL
+    caminho VARCHAR(500) NOT NULL,
+    criado_em TIMESTAMP NOT NULL DEFAULT NOW()
 );

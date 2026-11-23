@@ -22,6 +22,11 @@ export default function NovaClassificacao() {
   const [indiceNivel, setIndiceNivel] = useState(0);
   const [resultado, setResultado] = useState(null);
 
+  const [salvando, setSalvando] = useState(false);
+  const [erroSalvar, setErroSalvar] = useState('');
+  const [salvo, setSalvo] = useState(false);
+
+  // Busca a lista de fluxogramas assim que a pessoa chega nessa etapa
   useEffect(() => {
     if (etapa !== 'escolha-fluxograma') return;
 
@@ -30,6 +35,24 @@ export default function NovaClassificacao() {
       .then(setFluxogramas)
       .catch((err) => setErro(err.message))
       .finally(() => setCarregando(false));
+  }, [etapa]);
+
+  // Salva a classificação assim que o resultado é confirmado
+  useEffect(() => {
+    if (etapa !== 'resultado') return;
+
+    setSalvando(true);
+    setErroSalvar('');
+
+    api.criarClassificacao({
+      boletimId: boletimId || null,
+      fluxograma: resultado.fluxograma,
+      cor: resultado.cor,
+      discriminador: resultado.discriminador,
+    })
+      .then(() => setSalvo(true))
+      .catch((err) => setErroSalvar(err.message))
+      .finally(() => setSalvando(false));
   }, [etapa]);
 
   function handleSubmit(e) {
@@ -212,24 +235,3 @@ export default function NovaClassificacao() {
     </div>
   );
 }
-
-const [salvando, setSalvando] = useState(false);
-const [erroSalvar, setErroSalvar] = useState('');
-const [salvo, setSalvo] = useState(false);
-
-useEffect(() => {
-  if (etapa !== 'resultado') return;
-
-  setSalvando(true);
-  setErroSalvar('');
-
-  api.criarClassificacao({
-    boletimId: boletimId || null,
-    fluxograma: resultado.fluxograma,
-    cor: resultado.cor,
-    discriminador: resultado.discriminador,
-  })
-    .then(() => setSalvo(true))
-    .catch((err) => setErroSalvar(err.message))
-    .finally(() => setSalvando(false));
-}, [etapa]);

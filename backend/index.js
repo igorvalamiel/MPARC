@@ -2,6 +2,9 @@ const express = require('express');
 const cors = require('cors');
 const { Pool } = require('pg');
 
+const cron = require('node-cron');
+const { exportarClassificacoesDaSemana } = require('./exportarSemanal');
+
 const app = express();
 
 // Middlewares
@@ -139,6 +142,11 @@ app.listen(3000, () => {
   console.log('API rodando na porta 3000');
 });
 
+// toda segunda-feira, às 00:05
+cron.schedule('* * * * *', () => {
+  exportarClassificacoesDaSemana(pool).catch(console.error);
+});
+
 // --------------------------------------------------------------------
 // Importando arquivo dos fluxogramas
 
@@ -159,6 +167,24 @@ app.get('/fluxogramas/:id', autenticar, (req, res) => {
   }
 
   res.json(fluxograma);
+});
+
+app.get('/classificacoes', autenticar, async (req, res) => {
+  try {
+    const { rows } = await pool.query(
+      `SELECT c.id, c.boletim_id, c.classificacao, c.caminho, c.criado_em,
+              u.nome AS profissional_nome
+       FROM classificacoes c
+       JOIN usuarios u ON u.id = c.profissional_id::integer
+       WHERE c.criado_em >= NOW() - INTERVAL '7 days'
+       ORDER BY c.criado_em DESC`
+    );
+
+    res.json(rows);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Erro ao buscar classificações' });
+  }
 });
 
 app.post('/classificacoes', autenticar, async (req, res) => {
